@@ -321,7 +321,7 @@ public abstract class GraphQlToSparqlConverterBase<K>
                 }
                 Binding b = bb.build();
                 NodeValue nv = ExprLib.evalOrNull(whenExpr, b, null);
-                applyFilter = XSDFuncOp.booleanEffectiveValue(nv);
+                applyFilter = XSDFuncOp.effectiveBooleanValue(nv);
             }
 
             // TODO The @filter expr can originate from the schema in order to filter by the type's

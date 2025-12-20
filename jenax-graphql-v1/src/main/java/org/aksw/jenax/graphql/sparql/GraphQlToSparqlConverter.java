@@ -250,7 +250,7 @@ public class GraphQlToSparqlConverter {
                             String str = v.getValue();
 
                             org.apache.jena.graph.Node TO_STRING = NodeFactory.createURI("fn:" + XSD.xstring.getURI());
-                            argQuery.constraints().fwd(TO_STRING).enterConstraints().eq(NodeFactory.createLiteral(str))
+                            argQuery.constraints().fwd(TO_STRING).enterConstraints().eq(NodeFactory.createLiteralString(str))
                                     .activate().leaveConstraints();
                         }
                     }
@@ -360,7 +360,7 @@ public class GraphQlToSparqlConverter {
 
                         // fieldIri = deriveFieldIri(context, name);
                         // Node node = NodeFactory.createLiteral(nodeQuery.relationQuery().getScopeBaseName());
-                        Node node = NodeFactory.createLiteral(nodeFragment.relationQuery().getScopeBaseName());
+                        Node node = NodeFactory.createLiteralString(nodeFragment.relationQuery().getScopeBaseName());
 
 
                         GraphToJsonNodeMapperFragmentHead fragmentMapper = GraphToJsonNodeMapperFragmentHead.of(node, true);
@@ -443,7 +443,7 @@ public class GraphQlToSparqlConverter {
                     P_Path0 basicPath = PathUtils.createStep(step.getNode(), step.getDirection().isForward());
                     boolean useRelationId = true;
                     if (useRelationId) {
-                        Node node = NodeFactory.createLiteral(fieldQuery.relationQuery().getScopeBaseName());
+                        Node node = NodeFactory.createLiteralString(fieldQuery.relationQuery().getScopeBaseName());
                         propertyMapper = GraphToJsonPropertyMapper.of(node, step.getDirection().isForward());
                     } else {
                         propertyMapper = GraphToJsonPropertyMapper.of(basicPath);
@@ -503,7 +503,7 @@ public class GraphQlToSparqlConverter {
                             String str = v.getValue();
 
                             org.apache.jena.graph.Node TO_STRING = NodeFactory.createURI("fn:" + XSD.xstring.getURI());
-                            argQuery.constraints().fwd(TO_STRING).enterConstraints().eq(NodeFactory.createLiteral(str))
+                            argQuery.constraints().fwd(TO_STRING).enterConstraints().eq(NodeFactory.createLiteralString(str))
                                     .activate().leaveConstraints();
                         }
                     }

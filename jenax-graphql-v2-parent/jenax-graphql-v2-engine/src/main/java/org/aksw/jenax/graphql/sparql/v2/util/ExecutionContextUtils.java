@@ -9,7 +9,7 @@ public class ExecutionContextUtils {
     public static ExecutionContext createFunctionEnv() {
         Context context = ARQ.getContext().copy();
         Context.setCurrentDateTime(context);
-        ExecutionContext result = new ExecutionContext(context, null, null, null);
+        ExecutionContext result = ExecutionContext.create(context);
         return result;
     }
 }

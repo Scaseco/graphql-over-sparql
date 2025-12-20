@@ -23,8 +23,8 @@ import org.apache.jena.query.Query;
 import org.apache.jena.query.SortCondition;
 import org.apache.jena.sparql.core.Var;
 import org.apache.jena.sparql.expr.E_Coalesce;
-import org.apache.jena.sparql.expr.E_Conditional;
 import org.apache.jena.sparql.expr.E_Equals;
+import org.apache.jena.sparql.expr.E_If;
 import org.apache.jena.sparql.expr.E_LogicalAnd;
 import org.apache.jena.sparql.expr.Expr;
 import org.apache.jena.sparql.expr.ExprList;
@@ -115,7 +115,7 @@ public class ElementGeneratorLateral {
                     if (!scs.isEmpty()) {
                         for (SortCondition sc : scs) {
                             SortCondition adaptedSc = new SortCondition(
-                                new E_Conditional(
+                                new E_If(
                                     // new E_Equals(stateEv, NodeValue.makeNode(sn.stateId())),
                                     idExpr,
                                     sc.getExpression(),

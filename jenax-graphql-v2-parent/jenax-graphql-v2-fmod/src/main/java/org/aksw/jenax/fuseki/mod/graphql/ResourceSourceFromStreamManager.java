@@ -3,7 +3,7 @@ package org.aksw.jenax.fuseki.mod.graphql;
 import java.io.IOException;
 
 import org.apache.jena.atlas.web.TypedInputStream;
-import org.apache.jena.riot.system.stream.StreamManager;
+import org.apache.jena.riot.system.streammgr.StreamManager;
 
 public class ResourceSourceFromStreamManager
     extends ResourceSourceBase

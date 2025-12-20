@@ -27,7 +27,7 @@ public class QueryUtils {
             query.setQueryResultStar(true);
         }
 
-        query.setResultVars();
+        query.resetResultVars();
 
         if (resultVar != null) {
             query.getResultVars().add(resultVar);
