@@ -15,10 +15,10 @@
 	</parent>
 
 	<modules>
-		<module>jenax-graphql-v2-utils</module>
-		<module>jenax-graphql-v2-schemagen</module>
-		<module>jenax-graphql-v2-engine</module>
-		<module>jenax-graphql-v2-ui</module>
-		<module>jenax-graphql-v2-fmod</module>
+		<module>graphql-over-sparql-utils</module>
+		<module>graphql-over-sparql-schemagen</module>
+		<module>graphql-over-sparql-engine</module>
+		<module>graphql-over-sparql--ui</module>
+		<module>graphql-over-sparql-fmod</module>
 	</modules>
 </project>

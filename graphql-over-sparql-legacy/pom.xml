@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>jenax-graphql-v1</artifactId>
-    <name>jenax-graphql-v1</name>
+	<artifactId>graphql-over-sparql-legacy</artifactId>
+        <name>graphql-over-sparql-legacy</name>
 	<packaging>jar</packaging>
 
 	<parent>
-		<groupId>org.aksw.jenax</groupId>
-		<artifactId>jenax-graphql-parent</artifactId>
+		<groupId>org.aksw.graphql-over-sparql</groupId>
+		<artifactId>graphql-over-sparql-parent</artifactId>
 		<version>6.0.0-1-SNAPSHOT</version>
 	</parent>
 

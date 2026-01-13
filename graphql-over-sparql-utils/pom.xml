@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>jenax-graphql-v2-engine</artifactId>
-    <name>jenax-graphql-v2-engine</name>
+	<artifactId>graphql-over-sparql-utils</artifactId>
+    <name>graphql-over-sparql-utils</name>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -13,25 +13,6 @@
 		<artifactId>jenax-graphql-v2-parent</artifactId>
 		<version>6.0.0-1-SNAPSHOT</version>
 	</parent>
-
-    <build>
-    <!--
-      <plugins>
-        <plugin>
-    <groupId>org.teavm</groupId>
-    <artifactId>teavm-maven-plugin</artifactId>
-    <version>0.7.0</version>
-          <executions>
-                <execution>
-                    <goals>
-                        <goal>compile</goal>
-                    </goals>
-                </execution>
-            </executions>
-</plugin>
-      </plugins>
-    -->
-    </build>
 
 	<dependencies>
 		<dependency>
@@ -42,11 +23,6 @@
 		<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-java</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.aksw.jenax</groupId>
-			<artifactId>jenax-graphql-v2-utils</artifactId>
 		</dependency>
 
 		<!-- Unit Testing -->
