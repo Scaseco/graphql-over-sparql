@@ -1,6 +1,7 @@
 ## Example Fuseki Setup
 
 The example sets up a Fuseki with the graphql4sparql plugin and example data.
+The whole example setup will be placed in the relative `./target` folder. Removing this folder completely removes the example setup.
 
 ```bash
 $ make setup-example
