@@ -7,7 +7,7 @@ Fast streaming GraphQL-to-SPARQL rewrite system for getting JSON responses from 
 The engine only depends on [Apache Jena](https://jena.apache.org/) and [GraphQL-Java](https://www.graphql-java.com/).
 
 Note, that this project does not use GraphQL-Java's execution engine.
-Instead, GraphQL documents are processed into a SPARQL query and a corresponding SPARQL result set processor.
+Instead, a GraphQL document is processed into a SPARQL query and a corresponding SPARQL result set processor.
 
 ## Status
 
